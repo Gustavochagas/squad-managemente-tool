@@ -5,10 +5,10 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 5px 60px;
+  padding: 0.3125rem 3.75rem;
   background-image: $gradient-color;
   @include xs {
-    padding: 5px 20px;
+    padding: 0.3125rem 1.25rem;
   }
   .header-logo {
     display: flex;
@@ -24,10 +24,10 @@
       }
     }
     span {
-      margin-left: 15px;
+      margin-left: 1rem;
       color: white;
       font-weight: bold;
-      font-size: 20px;
+      font-size: 1.25rem;
       @include xs {
         display: none;
       }
@@ -39,20 +39,20 @@
     span {
       color: white;
       font-size: 1rem;
-      margin-right: 15px;
+      margin-right: 1rem;
       @include xs {
         display: none;
       }
     }
     .user-image {
-      $size: 50px;
+      $size: 3.125rem;
       width: $size;
       height: $size;
       border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 22px;
+      font-size: 1.375rem;
       background-color: white;
       color: black;
     }
