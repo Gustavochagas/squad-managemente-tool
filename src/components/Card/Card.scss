@@ -1,0 +1,38 @@
+@import '../../assets/styles/variables';
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  width: 100%;
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    border-bottom: 1px solid $gray-dark;
+
+    .card-title {
+      margin: 0;
+      color: $secondary-color;
+    }
+
+    .card-action {
+      .card-action-link {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background-image: $gradient-color;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        box-shadow: 1px 1px 10px 0px rgba($secondary-color, .5);
+      }
+    }
+  }
+
+  .card-body {
+    padding: 30px 15px;
+  }
+}
