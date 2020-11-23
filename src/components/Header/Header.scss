@@ -3,6 +3,8 @@
 
 .header {
   width: 100%;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   padding: 0.3125rem 3.75rem;
