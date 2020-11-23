@@ -1,0 +1,60 @@
+@import '../../assets/styles/variables';
+@import '../../assets//styles//mixins';
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 60px;
+  background-image: $gradient-color;
+  @include xs {
+    padding: 10px 20px;
+  }
+  .header-logo {
+    display: flex;
+    align-items: center;
+    .header-link {
+      background: url('../../assets/images/logo.svg') left top;
+      background-size: 200px 56px;
+      background-repeat: no-repeat;
+      width: 65px;
+      height: 58px;
+      > span {
+        display: none;
+      }
+    }
+    span {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      @include xs {
+        display: none;
+      }
+    }
+  }
+  .header-user {
+    display: flex;
+    align-items: center;
+    span {
+      color: white;
+      font-size: 1rem;
+      margin-right: 15px;
+      @include xs {
+        display: none;
+      }
+    }
+    .user-image {
+      $size: 50px;
+      width: $size;
+      height: $size;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+      background-color: white;
+      color: black;
+    }
+  }
+}
