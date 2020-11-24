@@ -1,0 +1,32 @@
+@import '../../../../assets/styles/mixins';
+
+.most-picked {
+  display: flex;
+  flex-wrap: wrap;
+
+  .column {
+    width: 50%;
+    text-align: center;
+    position: relative;
+    @include sm-max {
+      width: 100%;
+    }
+
+    h2 {
+      color: white;
+    }
+
+    .most-picked-user {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background-color: white;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2.5rem;
+      margin: 50px auto;
+    }
+  }
+}

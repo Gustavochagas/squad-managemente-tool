@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../../components/Card/Card';
+import MostPicked from './components/MostPicked/MostPicked';
 import Table from './components/Table/Table';
 import TopPlayers from './components/TopPlayers/TopPlayers';
 import './LandingPage.scss';
@@ -19,8 +20,8 @@ const LandingPage = () => {
           </Card>
         </div>
         <div className="card-item three">
-          <Card title="My teams" action>
-            <Table />
+          <Card>
+            <MostPicked />
           </Card>
         </div>
       </div>

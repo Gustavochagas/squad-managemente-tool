@@ -1,5 +1,5 @@
 @import '../../assets/styles/variables';
-@import '../../assets//styles/mixins';
+@import '../../assets/styles/mixins';
 
 .landing-page {
   background-color: $gray-light;
@@ -28,6 +28,9 @@
       }
       &.three {
         grid-area: three;
+        .card {
+          background-image: $gradient-color
+        }
       }
     }
   }
