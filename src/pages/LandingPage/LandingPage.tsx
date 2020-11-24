@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../../components/Card/Card';
 import Table from './components/Table/Table';
+import TopPlayers from './components/TopPlayers/TopPlayers';
 import './LandingPage.scss';
 
 const LandingPage = () => {
@@ -13,8 +14,8 @@ const LandingPage = () => {
           </Card>
         </div>
         <div className="card-item two">
-          <Card title="Top 5" action>
-            <Table />
+          <Card title="Top 5">
+            <TopPlayers />
           </Card>
         </div>
         <div className="card-item three">

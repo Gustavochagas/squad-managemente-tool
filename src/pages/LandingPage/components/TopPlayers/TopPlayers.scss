@@ -1,0 +1,52 @@
+@import '../../../../assets/styles/variables';
+@import '../../../../assets//styles/mixins';
+
+.top-players {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 25px;
+  .top-players-column {
+    width: calc(50% - 20px);
+    @include sm-max {
+      width: 100%;
+      &:first-child {
+        margin-bottom: 1.5rem;
+      }
+    }
+    @include md-min {
+      &:first-child {
+        margin-right: 10px;
+      }
+      &:last-child {
+        margin-left: 10px;
+      }
+    }
+    .top-players-title {
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+    .top-players-list {
+      padding: 5px;
+      border-radius: 10px;
+      background-color: $gray-dark;
+      .top-players-item {
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 5px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid white;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        span {
+          font-weight: bold;
+        }
+        &:hover {
+          border: 1px solid $primary-color;
+        }
+      }
+    }
+  }
+}
