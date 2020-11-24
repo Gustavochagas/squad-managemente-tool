@@ -2,13 +2,12 @@
 
 .card {
   background-color: white;
-  border-radius: 15px;
-  width: 100%;
+  border-radius: 1rem;
 
   .card-header {
     display: flex;
     justify-content: space-between;
-    padding: 30px 40px;
+    padding: 1.875rem 2.5rem;
     border-bottom: 1px solid $gray-dark;
 
     .card-title {
@@ -18,21 +17,34 @@
 
     .card-action {
       .card-action-link {
-        width: 40px;
-        height: 40px;
-        border-radius: 10px;
+        $size: 2.5rem;
+        width: $size;
+        height: $size;
+        border-radius: 0.625rem;
         background-image: $gradient-color;
         color: white;
         display: flex;
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        box-shadow: 1px 1px 10px 0px rgba($secondary-color, .5);
+        box-shadow: 1px 1px 0.625rem 0px rgba($secondary-color, .5);
       }
     }
   }
 
   .card-body {
-    padding: 30px 15px;
+    padding: 1.875rem 1rem;
+  }
+
+  &.large {
+    width: 100%;
+  }
+
+  &.medium {
+    width: 50%;
+  }
+
+  &.mini {
+    width: 33.33%;
   }
 }

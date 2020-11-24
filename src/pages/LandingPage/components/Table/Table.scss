@@ -1,0 +1,59 @@
+@import '../../../../assets/styles/variables';
+
+.table-teams {
+  width: 100%;
+  tbody, thead {
+    display: grid;
+  }
+  .table-header {
+    padding: 0 1.25rem;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    border-bottom: 1px solid $gray-dark;
+    .table-header__item {
+      padding: 1rem 0;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      padding-right: 1.25rem;
+      &:first-child {
+        width: 30%;
+      }
+      &:last-child {
+        width: 70%;
+      }
+    }
+  }
+  .table-body {
+    padding: 1.25rem;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    border-bottom: 1px solid $gray-dark;
+    transition: all .2s ease-in-out;
+    .table-body__item {
+      &:first-child {
+        width: 30%;
+      }
+      &:last-child {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .table-action__item {
+        margin: 0 5px;
+        stroke-width: 3;
+        cursor: pointer;
+        visibility: hidden;
+      }
+    }
+    &:hover {
+      background-color: rgba(#b2417f, .2);
+      color: #b2417f;
+      .table-action__item {
+        visibility: visible;
+      }
+    }
+  }
+}
